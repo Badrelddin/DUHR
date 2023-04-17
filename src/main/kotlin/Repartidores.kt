@@ -5,21 +5,18 @@ class Repartidores {
     var filaAsign = 0
     var amonestaciones = 0
 
-    constructor(id:String, nombre:String, filaAsign: Int, amonestaciones:Int){
+    constructor(id:String, nombre:String, filaAsign: Int, amonestaciones:Int, Furgoneta:Furgoneta){
         this.id = id
         this.nombre = nombre
         this.filaAsign = filaAsign
         this.amonestaciones = amonestaciones
-
+        var furgoneta = Furgoneta
     }
 
 
-    open fun amonestar():Int{
-        return amonestaciones++
-    }
     override fun toString(): String {
+
         return "Repartidores(id='$id', nombre='$nombre', filaAsign=$filaAsign, amonestaciones=$amonestaciones)"
     }
-
 
 }
