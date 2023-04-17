@@ -5,6 +5,7 @@ class Furgoneta {
     var modelo = ""
     var paquetes = 0
 
+    constructor(){}
     constructor(matricula: String, marca: String, modelo: String, paquetes: Int) {
         this.matricula = matricula
         this.marca = marca
@@ -14,7 +15,7 @@ class Furgoneta {
 
     private fun checkPaquetes(nPaquete: Int): Int {
         var N = 4
-        if (nPaquete < N && nPaquete > 0) {
+        if (!(nPaquete < N && nPaquete > 0)) {
             println("Se ha sobrepasado el número de paquetes permitos")
             var nPquetes = readln().toInt()
         }

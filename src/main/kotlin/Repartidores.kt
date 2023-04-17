@@ -5,6 +5,7 @@ class Repartidores {
     var filaAsign = 0
     var amonestaciones = 0
 
+    constructor(){}
     constructor(id:String, nombre:String, filaAsign: Int, amonestaciones:Int, Furgoneta:Furgoneta){
         this.id = id
         this.nombre = nombre
